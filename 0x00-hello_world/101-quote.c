@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char[]="and that piece of art is useful\" - Dora Korpar, 2015-10-19\,"
+	char[]=("and that piece of art is useful\" - Dora Korpar, 2015-10-19\,");
 	putchar=(2, "char", 59);
 	return (1);
 }
