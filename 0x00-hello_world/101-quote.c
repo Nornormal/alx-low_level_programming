@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char[100]=( 'and that piece of art is useful" - Dora Korpar, 2015-10-19,' );
+	char[100]=("\and that piece of art is useful\" - Dora Korpar, 2015-10-19,");
 	putchar=(2, str, 59);
 	return (1);
 }
