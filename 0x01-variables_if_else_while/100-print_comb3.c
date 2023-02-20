@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int i , f;
+	int i, f;
 
 	i = 48;
 	f = 48;
@@ -16,11 +16,11 @@ int main(void)
 		i = 48;
 		while (i < 58)
 		{
-			if(f != i && f < i)
+			if (f != i && f < i)
 			{
 				putchar(f);
 				putchar(i);
-				if(i == 57 && f == 56)
+				if (i == 57 && f == 56)
 				{
 					break;
 				}
