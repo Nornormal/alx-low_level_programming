@@ -5,7 +5,7 @@
 /**
  *
  * main - deciding if a number is greater than 5, 0 or less than 6 and not 0
- *
+ * l is a last digit of a number
  * Return : Always 0 success
  */
 
