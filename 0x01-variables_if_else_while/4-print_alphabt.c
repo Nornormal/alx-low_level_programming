@@ -10,9 +10,9 @@ int main(void)
 {
 	int j;
 
-	for (j = 48; j < 58; j++)
+	for (j = 97; j < 123; j++)
 	{
-		if (j == 4 || j == 16)
+		if (j == 101 || j == 113)
 		{
 			continue;
 		}
