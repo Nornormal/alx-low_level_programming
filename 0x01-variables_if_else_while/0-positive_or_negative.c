@@ -3,7 +3,7 @@
 #include <stdio.h>
 /*
  *main - Entry point
- *Return - always 0
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -14,15 +14,15 @@ int main(void)
 
 	if( n == 0 )
 	{
-		printf("%d is zero\n");
+		printf("n is zero\n");
 	}
 	if(n > 0 )
 	{
-		printf("%d is positive\n");
+		printf("n is positive\n");
 	}
 	else
 	{
-		printf("%d is negative\n");
+		printf("n is negative\n");
 	}
 	return (0);
 }
