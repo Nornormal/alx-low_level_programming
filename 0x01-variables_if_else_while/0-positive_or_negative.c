@@ -4,6 +4,7 @@
 
 /*
  *main - deciding if number n is negative, positive or zero
+ *
  *Return: Always 0 (Success)
  */
 int main(void)
