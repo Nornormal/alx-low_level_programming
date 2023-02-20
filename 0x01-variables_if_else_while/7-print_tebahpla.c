@@ -8,7 +8,7 @@
 int main(void)
 {
 	char f[26] = "abcdefghijklmnopqrstuvwxyz";
-	int p = 26;
+	int p = 25;
 
 	while (p >= 0)
 	{
