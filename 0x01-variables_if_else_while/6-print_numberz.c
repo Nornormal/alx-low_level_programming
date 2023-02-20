@@ -7,12 +7,11 @@
  */
 int main(void)
 {
-	char c[10] = "0123456789";
 	int f = 0;
 
 	while (f < 11)
 	{
-		putchar(c[f]);
+		putchar('f');
 		f = f + 1;
 	}
 	putchar('\n');
