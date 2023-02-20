@@ -7,13 +7,11 @@
  */
 int main(void)
 {
-	char c[10] = "0123456789";
-	int f = 0;
+	int f;
 
-	while (f < 11)
+	for (f = 48; f < 58; f++)
 	{
-		putchar(c[f]);
-		f = f + 1;
+		putchar(f);
 	}
 	putchar('\n');
 	return (0);
