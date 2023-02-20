@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - print lowercase alphabet
+ * main - print combinations of numbers
  *
  * Return: Always 0
  */
-
 int main(void)
 {
-	int j;
+	int g;
 
 	for (j = 48; j < 58; j++)
 	{
-		if (j == 4 || j == 16)
+		putchar(i);
+		if (i != 57)
 		{
-			continue;
+			putchar(',');
+			putchar(' ');
 		}
-		putchar(j);
 	}
 	putchar('\n');
 	return (0);
