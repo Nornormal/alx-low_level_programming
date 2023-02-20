@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
- *main - deciding if number n is negative, positive or zero
+/**
+ *main - deciding if a number is negative, positive or zero
  *
  *Return: Always 0 (Success)
  */
