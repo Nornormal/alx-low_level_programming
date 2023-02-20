@@ -8,13 +8,14 @@
 
 int main(void)
 {
-	char d[24] = "abcdfghijklmnoprstuvwxyz";
+	char d[25] = "abcdfghijklmnoprstuvwxyz";
 	int j = 0;
 
-	while (j < 24)
+	while (j < 25)
 	{
 		putchar(d[j]);
 		j = j + 1;
 	}
+	putchar('\n');
 	return (0);
 }
