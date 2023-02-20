@@ -5,7 +5,7 @@
 /**
  * main - deciding if a number is greater than 5, 0 or less than 6.
  *
- * Return : Always 0 success
+ * Return: Always 0 success
  */
 
 int main(void)
