@@ -9,19 +9,18 @@
 
 int main(void)
 {
-	char e, f;
-	int c, m;
+	char e[26] = "abcdefghijklmnopqrstuvwxyz";
+	char f[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int c = 0, m = 0;
 
-	e = 'a';
-	f = 'A';
-	while (e <= 'z')
+	while (c <= 25)
 	{
-		putchar('e');
+		putchar(e[c]);
 		c = c + 1;
 	}
-	while (f <= 'Z')
+	while (m <= 25)
 	{
-		putchar('f');
+		putchar(f[m]);
 		m = m + 1;
 	}
 	putchar('\n');

@@ -8,14 +8,13 @@
  */
 int main(void)
 {
-	char f;
-	int c;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i = 0;
 
-	f = 'a';
-	while (f <= 'z')
+	while (i < 26)
 	{
-		putchar('f');
-		c = c + 1;
+		putchar(alp[i]);
+		i = i + 1;
 	}
 	putchar('\n');
 	return (0);
