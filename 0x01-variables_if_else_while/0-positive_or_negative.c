@@ -5,7 +5,6 @@
  *main - Entry point
  *Return - always 0
  */
-
 int main(void)
 {
 	int n;
@@ -15,16 +14,15 @@ int main(void)
 
 	if( n == 0 )
 	{
-		printf("The number is zero\n");
+	printf("%s n is zero\n");
 	}
 	if(n > 0 )
 	{
-		printf("The number is positive\n");
+	printf("%s n is positive\n");
 	}
 	else
 	{
-		printf("The number is negative\n");
+	printf("%s n is negative\n");
 	}
-
 	return (0);
 }
