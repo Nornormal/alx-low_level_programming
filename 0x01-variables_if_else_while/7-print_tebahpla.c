@@ -10,7 +10,7 @@ int main(void)
 	char f[26] = "abcdefghijklmnopqrstuvwxyz";
 	int p = 26;
 
-	while (p <= 0)
+	while (p >= 0)
 	{
 		putchar(f[p]);
 		p = p - 1;
