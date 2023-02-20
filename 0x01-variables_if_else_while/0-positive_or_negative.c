@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /*
- *main - Entry point
+ *main - print number n
  *Return: Always 0 (Success)
  */
 int main(void)
@@ -14,15 +14,15 @@ int main(void)
 
 	if( n == 0 )
 	{
-		printf("n is zero\n");
+		printf("%d n= is zero\n");
 	}
 	if(n > 0 )
 	{
-		printf("n is positive\n");
+		printf("%d n= is positive\n");
 	}
 	else
 	{
-		printf("n is negative\n");
+		printf("%d n= is negative\n");
 	}
 	return (0);
 }
