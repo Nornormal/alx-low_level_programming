@@ -5,7 +5,7 @@
  *
  * Return: Always 0
  */
-void print_alphabet(void)
+int main(void)
 {
 	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
