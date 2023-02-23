@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _abs(int) - compute the absolute
+ * _abs - compute the absolute
  * @a: input number
  *
  * Return: absolute value
  */
-int _abs(int)
+int _abs(int a)
 {
-	if (a > 0)
+	if (a >= 0)
 	{
 		return (a);
 	}
