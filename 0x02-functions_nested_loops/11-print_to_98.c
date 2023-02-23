@@ -5,7 +5,6 @@
  * from n to 98
  *
  * @n: input 
- *
  * Return: no return
  */
 void print_to_98(int n)
