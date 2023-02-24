@@ -2,7 +2,6 @@
 
 /**
  * main - print numbers from 1 to 100
- * @n: printed number
  * Return: Always 0
  */
 int main(void)
