@@ -10,9 +10,13 @@ int _isupper(int c)
 {
 	int c;
 	
-	for (i = 65; i <= 90; i++)
+	if (i >= 65; i <= 90)
 	{
-		_putchar(i);
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 	_putchar('\n');
 }
