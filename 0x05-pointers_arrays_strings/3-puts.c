@@ -8,14 +8,14 @@
  */
 void _puts(char *str);
 {
-	int = *str;
-	for (*str = 0; *str >= 0; *str++)
+	int = c;
+	for (c = 0; c >= 0; c++)
 	{
-		if (*str == '\0')
+		if (str[c] == '\0')
 		{
 			_putchar('\n');
 			break;
 		}
 	}
-	_putchar('*str');
+	_putchar('str[c]');
 }
