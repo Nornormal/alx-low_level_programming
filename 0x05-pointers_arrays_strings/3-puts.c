@@ -9,6 +9,7 @@
 void _puts(char *str);
 {
 	int = c;
+	
 	for (c = 0; c > 0; c++)
 	{
 		if (str[c] == '\0')
