@@ -9,9 +9,13 @@
 void _puts(char *str);
 {
 	int = *str;
-	for (*str = 0; *str < n; *str++)
+	for (*str = 0; *str >= 0; *str++)
 	{
-		_putchar('*str');
+		if (*str == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
 	}
-	_putchar('\n');
+	_putchar('*str');
 }
