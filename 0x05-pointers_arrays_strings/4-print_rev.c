@@ -11,11 +11,11 @@ void print_rev(char *s)
 
 	for (c = 0; c >= 0; c++)
 	{
-		if (str[c] == '\0')
+		if (s[c] == '\0')
 			break;
 	}
 	
 	for (c--; c >= 0; c--)
-		_putchar(str[c]);
+		_putchar(s[c]);
 	_putchar('\n');
 }
