@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		if (!isdigit(argv[i]))
 		{
 			printf("Error\n");
-			return(1);
+			return (1);
 		}
 		else if (argc == 1)
 		{
@@ -24,6 +24,6 @@ int main(int argc, char *argv[])
 		}
 		add = add + atoi(argv[i]);
 	}
-	printf("%d\n, add);
+	printf("%d\n", add);
 	return(0);
 }
