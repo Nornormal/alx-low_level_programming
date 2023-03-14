@@ -13,14 +13,10 @@ int main(int argc, char *argv[])
 	
 	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(argv[i]))
+		if (argv[i] != digit)
 		{
 			printf("Error\n");
 			return (1);
-		}
-		else if (argc == 1)
-		{
-			printf("0\n");
 		}
 		add = add + atoi(argv[i]);
 	}
