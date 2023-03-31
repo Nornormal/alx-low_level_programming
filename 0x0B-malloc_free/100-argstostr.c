@@ -49,3 +49,4 @@ char *argstostr(int ac, char **av)
 	aout[ia] = '\0';
 
 	return (aout);
+}
