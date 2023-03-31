@@ -10,29 +10,30 @@
  */
 int main(int argc, char *argv[])
 {
-	char *dup;
-	int len;
-	list_t *new;
+	int cents, ncoins = 0;
 
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
-		return (NULL);
-
-	dup = strdup(str);
-	if (dup == NULL)
+	if (argc == 1 || argc > 2)
 	{
-		free(new);
-		return (NULL);
+		printf("Error\n");
+		return (1);
 	}
 
-	for (len = 0; str[len];)
-		len++;
+	cents = atoi(argv[1]);
 
-	new->str = dup;
-	new->len = len;
-	new->next = *head;
-
-	*head = new;
-
-	return (new);
+	while (cents > 0)
+	{
+		if (cents >= 25)
+			cents -= 25;
+		else if (cents >= 10)
+			cents -= 10;
+		else if (cents >= 5)
+			cents -= 5;
+		else if (cents >= 2)
+			cents -= 2;
+		else if (cents >= 1)
+			cents -= 1;
+		ncoins += 1;
+	}
+	printf("%d\n", ncoins);
+	return (0);
 }
