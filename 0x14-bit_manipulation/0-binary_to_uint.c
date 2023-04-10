@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * unsigned int binary_to_uint - a function convert binary to decimal
+ * binary_to_uint - a function convert binary to decimal
  * @b: binary number.
  *
  * Return: converted number
@@ -25,7 +25,6 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		
 		if (b[i] & 1)
 		{
 			sum += j;
