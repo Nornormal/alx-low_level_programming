@@ -8,8 +8,8 @@
 /**
  * create_file - a function that creates a file.
  * @filename: the name of the file to create
- * @text_content is a NULL terminated string to write to the file
- * Returns: 1 on success, -1 on failure
+ * @text_content: is a NULL terminated string to write to the file
+ * Return: 1 on success, -1 on failure
  */
 int create_file(const char *filename, char *text_content)
 {
@@ -20,7 +20,8 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		for (i = 0; text_content[i]; i++)
+		for (i = 0; text_content[i];)
+			i++;
 	}
 
 	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
