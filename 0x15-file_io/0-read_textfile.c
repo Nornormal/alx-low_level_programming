@@ -1,4 +1,9 @@
 #include "main.h"
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 /**
  * read_textfile - reads a text file and
@@ -9,28 +14,28 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int o;
-	ssize_t r, w;
+	int fo;
+	ssize_t nr, nw;
 	char *buff;
 
 	if (filename == NULL)
 		return (0);
 
-	o = open(filename, O_RDONLY);
+	fo = open(filename, O_RDONLY);
 
-	if (o == -1)
+	if (fo == -1)
 		return (0);
 
 	buff = malloc(sizeof(char) * (letters));
 	if (buff == NULL)
 		return (0);
 
-	r = read(o, buff, letters);
-	w = write(STDOUT_FILENO, buff, r);
+	nr = read(fo, buff, letters);
+	nw = write(STDOUT_FILENO, buff, nr);
 
-	close(o);
+	close(fo);
 
 	free(buff);
-	
-	return (w);
+
+	return (nw);
 }
