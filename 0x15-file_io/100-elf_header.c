@@ -88,53 +88,53 @@ void prnt_osb(char *point)
 	char osb = point[7];
 
 	printf("  OS/ABI:                            ");
-	if (osabi == 0)
+	if (osb == 0)
 		printf("UNIX - System V\n");
-	else if (osabi == 2)
+	else if (osb == 2)
 		printf("UNIX - NetBSD\n");
-	else if (osabi == 6)
+	else if (osb == 6)
 		printf("UNIX - Solaris\n");
 	else
-		printf("<unknown: %x>\n", osabi);
+		printf("<unknown: %x>\n", osb);
 
-	printf("  ABI Version:                       %d\n", ptr[8]);
+	printf("  ABI Version:                       %d\n", point[8]);
 }
 
 
 /**
- * print_version - prints version
- * @ptr: magic.
- * Return: no return.
+ * prnt_ver - function that prints version
+ * @point: pointer to version.
+ * Return: nothing.
  */
-void print_version(char *ptr)
+void prnt_ver(char *point)
 {
-	int version = ptr[6];
+	int ver = point[6];
 
-	printf("  Version:                           %d", version);
+	printf("  Version:                           %d", ver);
 
-	if (version == EV_CURRENT)
+	if (ver == EV_CURRENT)
 		printf(" (current)");
 
 	printf("\n");
 }
 /**
- * print_data - prints data
- * @ptr: magic.
- * Return: no return.
+ * prnt_dt - function that prints data
+ * @point: pointer to data.
+ * Return: nothing.
  */
-void print_data(char *ptr)
+void prnt_dt(char *point)
 {
-	char data = ptr[5];
+	char d = point[5];
 
 	printf("  Data:                              2's complement");
-	if (data == 1)
+	if (d == 1)
 		printf(", little endian\n");
 
-	if (data == 2)
+	if (d == 2)
 		printf(", big endian\n");
 }
 /**
- * print_magic - prints magic info.
+ * prnt_mag - functprints magic info.
  * @ptr: magic.
  * Return: no return.
  */
