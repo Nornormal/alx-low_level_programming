@@ -38,7 +38,7 @@ void prnt_adr(char *point)
 		start = 26;
 		for (j = start; j > 23; j--)
 		{
-			if (point[i] >= 0)
+			if (point[j] >= 0)
 				printf("%02x", point[j]);
 
 			else if (point[j] < 0)
@@ -82,7 +82,7 @@ void prnt_mag(char *point)
 
 	printf("  Magic:  ");
 	for (byt = 0; byt < 16; byt++)
-		printf(" %02x", ptr[byt]);
+		printf(" %02x", point[byt]);
 
 	printf("\n");
 
@@ -148,7 +148,7 @@ void prnt_typ(char *point)
 	else if (tp == 4)
 		printf("CORE (Core file)\n");
 	else
-		printf("<unknown: %x>\n", type);
+		printf("<unknown: %x>\n", tp);
 }
 
 /**
@@ -169,11 +169,11 @@ void chk_sstem(char *point)
 	if (sstem == '1')
 		printf("  Class:                             ELF32\n");
 
-	if (sys == '2')
+	if (sstem == '2')
 		printf("  Class:                             ELF64\n");
 
 	prnt_dt(point);
-	prnt_vers(point);
+	prnt_ver(point);
 	prnt_osb(point);
 	prnt_typ(point);
 	prnt_adr(point);
@@ -188,8 +188,8 @@ int chk_elf(char *point)
 {
 	int adr = (int)point[0];
 	char E = point[1];
-	char L = ptr[2];
-	char F = ptr[3];
+	char L = point[2];
+	char F = point[3];
 
 	if (adr == 127 && E == 'E' && L == 'L' && F == 'F')
 		return (1);
